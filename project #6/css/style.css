@@ -2054,25 +2054,55 @@ footer .container .three .loc p {
 footer .container .three .loc i {
   font-size: 32px;
   color: var(--main-color);
+
+  animation-name: move-location-icon;
+  animation-duration: 0.8s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-play-state: paused;
+}
+
+footer .container .three .loc:hover i {
+  animation-play-state: running;
+}
+
+@keyframes move-location-icon {
+  0% {
+    transform: translateY(3px);
+  }
+  100% {
+    transform: translateY(-3px);
+  }
 }
 
 footer .container .four {
-  display: grid;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
   align-content: center;
+  gap: 10px;
 }
 
 footer .container .four .image {
   background-color: #333;
   border: 1px solid white;
+  width: 78px;
+  height: 78px;
+  transition-property: box-shadow;
+  transition-duration: 0.3s;
+}
+
+footer .container .four .image:hover {
+  box-shadow:
+    0 1px 10px 0 #ddd,
+    0 -1px 10px 0 #ddd,
+    1px 0 10px 0 #ddd,
+    -1px 0 10px 0 #ddd;
 }
 
 footer .container .four .image img {
-  width: 100px;
-  height: 100px;
+  max-width: 100%;
 }
 
 footer > p {
