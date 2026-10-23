@@ -2011,6 +2011,12 @@ footer .container > ul li {
   /* background-color: aqua; */
   padding: 10px;
   border-bottom: 1px solid rgba(221, 221, 221, 0.3);
+  transition-property: padding-left;
+  transition-duration: 0.3s;
+}
+
+footer .container > ul li:hover {
+  padding-left: 25px;
 }
 
 footer .container > ul li a {
