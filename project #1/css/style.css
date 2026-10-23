@@ -1,0 +1,141 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+
+.page {
+  width: 100%;
+  height: 100vh;
+  background-image: radial-gradient(circle 100vh at 90% 80%, red 60%, #333 60%);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  width: 80%;
+  height: 80%;
+  border-radius: 20px;
+  background-image: linear-gradient(
+    to right,
+    rgba(0, 0, 0, 0),
+    rgba(0, 0, 0, 0.5)
+  );
+  box-shadow: 3px 3px 5px 0 rgba(0, 0, 0, 0.5);
+  overflow: hidden;
+
+  /* display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center; */
+}
+
+nav {
+  width: 80%;
+  margin: 25px auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+nav h1 a {
+  text-decoration: none;
+  color: white;
+  text-transform: uppercase;
+}
+
+nav ul {
+  list-style: none;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: 500;
+  color: white;
+  text-transform: capitalize;
+}
+
+.content {
+  width: 80%;
+  margin: auto;
+  height: 100%;
+  /* background-color: red; */
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.text {
+  width: 50%;
+}
+
+.text h2 {
+  font-size: 50px;
+  color: white;
+  margin: 20px 0;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.text p {
+  font-size: 20px;
+  color: white;
+  line-height: 30px;
+}
+
+.image {
+  width: 40%;
+}
+.image img {
+  width: 100%;
+  height: 100%;
+}
+
+.down-list {
+  position: relative;
+  /* background-color: red; */
+}
+
+.down-list:hover .menu {
+  display: block;
+}
+
+.down-list button {
+  border: none;
+  background-color: transparent;
+  color: white;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.menu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  /* background-color: red; */
+  width: 120px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: none;
+}
+
+.menu li {
+  display: block;
+  width: 100%;
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+
+.menu li:hover {
+  background-color: rgb(141, 141, 141);
+}

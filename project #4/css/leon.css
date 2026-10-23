@@ -1,0 +1,376 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.page {
+  width: 100%;
+  height: 100vh;
+  background-color: white;
+}
+
+.container {
+  padding: 0 10px;
+  margin: 0 auto;
+}
+
+@media screen and (max-width: 576px) {
+  .container {
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 576px) {
+  .container {
+    width: 540px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    width: 720px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .container {
+    width: 960px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .container {
+    width: 1140px;
+  }
+}
+@media screen and (min-width: 1536px) {
+  .container {
+    width: 1440px;
+  }
+}
+
+.page header .container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+}
+
+.page header .container .logo {
+  width: 60px;
+  height: 30px;
+}
+
+.page header .container .logo img {
+  width: 100%;
+  height: 100%;
+}
+
+/* .page header {
+  background-color: aquamarine;
+} */
+
+.page header .container .menu {
+  position: relative;
+}
+
+.page header .container .menu .icon {
+  width: 30px;
+  height: 30px;
+  /* background-color: blueviolet; */
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: end;
+}
+
+.page header .container .menu .icon div {
+  width: 100%;
+  height: 2px;
+  border-radius: 10px;
+  background-color: #444;
+}
+
+.page header .container .menu .icon .center-line {
+  width: 50%;
+
+  transition-property: width;
+  transition-duration: 0.4s;
+}
+
+.page header .container .menu:hover .center-line {
+  width: 100%;
+}
+
+.page header .container .menu:hover ul {
+  display: block;
+}
+
+.page header .container .menu ul {
+  list-style: none;
+  min-width: 200px;
+
+  position: absolute;
+  top: 100%;
+  right: 0;
+
+  display: none;
+
+  z-index: 10;
+}
+
+.page header .container .menu ul li a {
+  padding: 5px;
+  color: #333;
+  background-color: #eee;
+  display: block;
+  font-size: 20px;
+  font-weight: 500;
+  text-decoration: none;
+  transition-property: padding-left;
+  transition-duration: 0.4s;
+  transition-timing-function: linear;
+  border-bottom: 1px solid gray;
+}
+
+.page header .container .menu ul li a:hover {
+  padding-left: 20px;
+}
+
+.landing {
+  width: 100%;
+  height: calc(100vh - 50px);
+  background-image: url("../images/landing.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.landing .text {
+  /* background-color: aqua; */
+  padding: 60px;
+}
+
+.landing .text h1 {
+  font-size: 50px;
+  text-transform: capitalize;
+  color: blackك;
+}
+
+.landing .text p {
+  font-size: 20px;
+  line-height: 1.8;
+}
+
+.features {
+  /* background-color: brown; */
+}
+
+.features .container {
+  /* background-color: aqua; */
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+
+  padding: 60px 0;
+}
+
+.features .container .feature {
+  width: 360px;
+  padding: 25px;
+  /* background-color: burlywood; */
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+
+.features .container .feature h2 {
+  font-size: 150%;
+  font-weight: 700;
+  text-align: center;
+}
+
+.features .container .feature p {
+  font-size: 120%;
+  text-align: center;
+  line-height: 1.6;
+}
+
+.features .container .feature i {
+  font-size: 50px;
+  color: gray;
+}
+
+.common-header {
+  /* background-color: aquamarine; */
+  padding: 20px;
+  width: 100%;
+}
+
+.common-header h2 {
+  font-size: 500%;
+  font-weight: 700;
+  text-align: center;
+  color: #eee;
+}
+
+.common-header p {
+  text-align: center;
+  margin-top: -20px;
+  font-size: 20px;
+  color: #444;
+}
+
+.services-section {
+  /* background-color: cornsilk; */
+}
+
+.services-section .container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 60px;
+  /* background-color: blueviolet; */
+}
+
+.services-container {
+  /* background-color: red; */
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  align-content: center;
+}
+
+.services {
+  /* background-color: aquamarine; */
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 25px;
+}
+
+.services .service {
+  width: 360px;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  gap: 25px;
+}
+
+.services .service i {
+  /* background-color: red; */
+  font-size: 30px;
+}
+
+.services .service .text {
+  /* background-color: aquamarine; */
+
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+.services .service .text h3 {
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.services .service .text p {
+  font-size: 18px;
+  line-height: 1.5;
+  font-weight: 500;
+}
+
+.services-container .image {
+  width: 600px;
+  height: 400px;
+  position: relative;
+}
+
+@media screen and (max-width: 1300px) {
+  .services-container .image {
+    display: none;
+  }
+}
+
+.services-container .image::after {
+  content: "";
+  display: block;
+  width: 100px;
+  height: calc(100% + 60px);
+  background-color: red;
+  position: absolute;
+  top: -30px;
+  right: -50px;
+  z-index: -1;
+}
+
+.services-container img {
+  width: 100%;
+  height: 100%;
+}
+
+.portfolio-section {
+  background-color: rgb(229, 229, 229);
+  padding: 40px 0;
+}
+
+.portfolio-section .container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 60px;
+}
+
+.portfolio-section .container .portfolio-container {
+  /* background-color: aqua; */
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.portfolio-section .container .portfolio-container .project {
+  width: 360px;
+  background-color: white;
+}
+
+.portfolio-section .container .portfolio-container .project img {
+  max-width: 100%;
+}
+
+.portfolio-section .container .portfolio-container .project h3 {
+  padding: 10px;
+  font-size: 20px;
+}
+
+.portfolio-section .container .portfolio-container .project p {
+  padding: 10px;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.footer {
+  background-color: dodgerblue;
+}
+
+.footer p {
+  padding: 25px;
+  font-size: 20px;
+  text-align: center;
+}
