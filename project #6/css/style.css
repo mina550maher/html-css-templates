@@ -1824,7 +1824,6 @@ body {
 }
 
 .discount-section .left {
-  background-color: var(--main-color);
   padding: 100px 20px;
   display: flex;
   flex-direction: column;
@@ -1832,7 +1831,46 @@ body {
   align-items: center;
   gap: 30px;
   text-align: center;
+
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  background-blend-mode: darken;
+  position: relative;
+  z-index: 1;
+
+  animation-name: image-spin;
+  animation-duration: 1s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-play-state: paused;
 }
+
+.discount-section .left:hover {
+  animation-play-state: running;
+}
+
+@keyframes image-spin {
+  0% {
+    background-image: url("../imgs/discount-background1.jpg");
+  }
+  100% {
+    background-image: url("../imgs/discount-background2.jpg");
+  }
+}
+
+.discount-section .left::before {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(33, 150, 243, 0.94);
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
 .discount-section .left h2 {
   font-size: 38px;
   letter-spacing: -1px;
