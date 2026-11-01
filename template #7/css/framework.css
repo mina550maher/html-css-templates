@@ -1,0 +1,71 @@
+/*padding*/
+.p-10 {
+  padding: 10px;
+}
+.p-20 {
+  padding: 20px;
+}
+
+.p-10-20 {
+  padding: 10px 20px;
+}
+.pt-20 {
+  padding-top: 20px;
+}
+
+/*margin*/
+.m-20 {
+  margin: 20px;
+}
+
+.mt-5 {
+  margin-top: 5px;
+}
+
+/*background*/
+
+.bg-ddd {
+  background-color: #ddd;
+}
+.bg-eee {
+  background-color: #eee;
+}
+/*border*/
+
+.brr-5 {
+  border-radius: 5px;
+}
+.brr-10 {
+  border-radius: 10px;
+}
+
+/*color*/
+
+.c-black {
+  color: black;
+}
+
+/*font*/
+.f-14 {
+  font-size: 14px;
+}
+
+.f-18 {
+  font-size: 18px;
+}
+
+.fw-b {
+  font-weight: bold;
+}
+
+/*position*/
+.p-relative {
+  position: relative;
+}
+
+/*flex*/
+.center-flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

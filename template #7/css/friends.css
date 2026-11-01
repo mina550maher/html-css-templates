@@ -1,0 +1,97 @@
+.friends-wrapper {
+  margin-top: 30px;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(310px, 1fr));
+  gap: 20px;
+}
+
+.friends-wrapper .friend {
+  background-color: white;
+  overflow: hidden;
+  border-radius: 5px;
+  padding: 20px;
+  position: relative;
+}
+
+.friends-wrapper .friend .box {
+  margin: 30px 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.friends-wrapper .friend .box img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+}
+
+.friends-wrapper .friend .stats {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 0;
+  border-bottom: 1px solid #ddd;
+  border-top: 1px solid #ddd;
+}
+
+.friends-wrapper .friend .stats .vip-state {
+  font-size: 60px;
+  color: rgba(255, 215, 0, 0.4);
+}
+
+.friends-wrapper .friend .stats ul {
+  list-style: none;
+}
+.friends-wrapper .friend .stats ul li {
+  margin-top: 10px;
+  font-size: 14px;
+}
+.friends-wrapper .friend .footer {
+  margin-top: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.friends-wrapper .friend .footer > span {
+  color: #777;
+  font-size: 14px;
+}
+
+.friends-wrapper .friend .footer .control > button {
+  padding: 3px 6px;
+  border-radius: 5px;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.friends-wrapper .friend .footer .control .rem {
+  background-color: red;
+}
+.friends-wrapper .friend .footer .control .prof {
+  background-color: deepskyblue;
+}
+.friends-wrapper .friend .contact {
+  position: absolute;
+  top: 10px;
+  left: 20px;
+}
+.friends-wrapper .friend .contact i {
+  background-color: #eee;
+  width: 30px;
+  height: 30px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  cursor: pointer;
+  transition-property: background-color;
+  transition-duration: 0.3s;
+  margin-right: 5px;
+}
+.friends-wrapper .friend .contact i:hover {
+  background-color: deepskyblue;
+}

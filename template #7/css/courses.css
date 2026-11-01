@@ -1,0 +1,70 @@
+.courses-wrapper {
+  margin-top: 30px;
+  /* background-color: red; */
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  gap: 30px 20px;
+}
+.courses-wrapper .course {
+  border-radius: 10px;
+  overflow: hidden;
+  background-color: white;
+  position: relative;
+  transition-property: transform;
+  transition-duration: 0.3s;
+  box-shadow: 10px 10px 12px 0 #ddd;
+}
+
+.courses-wrapper .course:hover {
+  transform: translateY(-10px);
+}
+
+.courses-wrapper .course img {
+  max-width: 100%;
+}
+
+.courses-wrapper .course .text {
+  padding: 20px;
+}
+.courses-wrapper .course .text p {
+  margin-top: 10px;
+  color: #777;
+  line-height: 1.6;
+}
+.courses-wrapper .course .stat {
+  margin-top: 20px;
+  padding: 20px 10px 10px 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  border-top: 1px solid #ddd;
+  /* background-color: rebeccapurple; */
+}
+
+.courses-wrapper .course .stat::before {
+  content: "Course Info";
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: deepskyblue;
+  border-radius: 5px;
+  padding: 5px 10px;
+  color: white;
+  font-size: 14px;
+}
+
+.courses-wrapper .course .stat span {
+  font-size: 14px;
+  color: #777;
+}
+.courses-wrapper .course .avatar {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  border: 2px solid white;
+  position: absolute;
+  top: 10px;
+  left: 10px;
+}

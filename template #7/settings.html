@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Settings</title>
+
+
+  <link rel="icon" href="imgs/setting-favicon.png" />
+  <link rel="stylesheet" href="css/all.min.css">
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/framework.css">
+  <link rel="stylesheet" href="css/template.css">
+  <link rel="stylesheet" href="css/settings.css">
+
+</head>
+
+<body>
+  <div class="page">
+    <aside class="sidebar p-10-20">
+      <h3 class="f-18 fw-b p-relative">Narmer</h3>
+      <ul>
+        <li class="brr-5">
+          <a href="index.html" class="p-10 c-black f-14">
+            <i class="fa-regular fa-chart-bar"></i>
+            <span class="hide-mobile">Dashboard</span>
+          </a>
+        </li>
+        <li class="current brr-5 mt-5 ">
+          <a href="settings.html" class="p-10 c-black f-14">
+            <i class="fa-solid fa-gear"></i>
+            <span class="hide-mobile">Settings</span>
+          </a>
+        </li>
+        <li class="brr-5 mt-5 ">
+          <a href="profile.html" class="p-10 c-black f-14">
+            <i class="fa-regular fa-user"></i>
+            <span class="hide-mobile">Profile</span>
+          </a>
+        </li>
+        <li class="brr-5 mt-5 ">
+          <a href="projects.html" class="p-10 c-black f-14">
+            <i class="fa-solid fa-diagram-project"></i>
+            <span class="hide-mobile">Projects</span>
+          </a>
+        </li>
+        <li class="brr-5 mt-5 ">
+          <a href="courses.html" class="p-10 c-black f-14">
+            <i class="fa-solid fa-graduation-cap"></i>
+            <span class="hide-mobile">Courses</span>
+          </a>
+        </li>
+        <li class="brr-5 mt-5 ">
+          <a href="friends.html" class="p-10 c-black f-14">
+            <i class="fa-solid fa-users"></i>
+            <span class="hide-mobile">Friends</span>
+          </a>
+        </li>
+        <li class="brr-5 mt-5 ">
+          <a href="files.html" class="p-10 c-black f-14">
+            <i class="fa-solid fa-file"></i>
+            <span class="hide-mobile">Files</span>
+          </a>
+        </li>
+        <li class="brr-5 mt-5 ">
+          <a href="plans.html" class="p-10 c-black f-14">
+            <i class="fa-solid fa-credit-card"></i>
+            <span class="hide-mobile">Plans</span>
+          </a>
+        </li>
+      </ul>
+    </aside>
+    <section>
+      <header>
+        <form action="">
+          <i class="fa-solid fa-magnifying-glass"></i>
+          <input type="search" placeholder="Type A Keyword" />
+        </form>
+        <div class="bell-logo">
+          <span>
+            <i class="fa-regular fa-bell bell"></i>
+          </span>
+          <img src="imgs/avatar.png" alt="">
+        </div>
+      </header>
+      <div class="content">
+        <h2 class="title">Settings</h2>
+        <div class="boxes">
+
+          <div class="site-control-box">
+            <h3>Site Control</h3>
+            <p>Control The Website If There Is Maintenance</p>
+            <div class="toggle-box">
+              <div class="text">
+                <span>Website Control</span>
+                <p>Open/Close Website And Type The Reason</p>
+              </div>
+              <label class="toggle">
+                <input type="checkbox" class="toggle-checkbox" checked>
+                <div class="toggle-switch"></div>
+              </label>
+            </div>
+            <textarea name="" id="" placeholder="Close Message Content"></textarea>
+          </div>
+
+          <div class="general-info-box">
+            <h3>General Info</h3>
+            <p>General Information About Your Account</p>
+            <form>
+              <div class="filed">
+                <label>First Name</label>
+                <input type="text" placeholder="First Name" />
+              </div>
+              <div class="filed">
+                <label>Last Name</label>
+                <input type="text" placeholder="Last Name" />
+              </div>
+              <div class="filed">
+                <label>Email</label>
+                <div class="email">
+                  <input type="email" placeholder="" value="mina@gmail.com" disabled />
+                  <input type="submit" value="Change" />
+                </div>
+              </div>
+            </form>
+          </div>
+
+          <div class="security-info-box">
+            <h3>Security Info</h3>
+            <p>Security Information About Your Account</p>
+            <div class="row">
+              <div class="text">
+                <span>Password</span>
+                <span>Last Change On 25/10/2021</span>
+              </div>
+              <span>change</span>
+            </div>
+            <div class="row">
+              <div class="text">
+                <span>Two-Factor Authentication</span>
+                <span>Enable/Disable The Feature</span>
+              </div>
+              <label class="toggle">
+                <input type="checkbox" class="toggle-checkbox" checked>
+                <div class="toggle-switch"></div>
+              </label>
+            </div>
+            <div class="row">
+              <div class="text">
+                <span>Password</span>
+                <span>Last Change On 25/10/2021</span>
+              </div>
+              <span>change</span>
+            </div>
+          </div>
+
+
+          <div class="social-info-box">
+            <h3>Social Info</h3>
+            <p>Social Media Information</p>
+            <form action="">
+              <div class="field">
+                <input type="text" placeholder="Twitter Username">
+                <i class="fa-brands fa-twitter"></i>
+              </div>
+              <div class="field">
+                <input type="text" placeholder="Twitter Username">
+                <i class="fa-brands fa-twitter"></i>
+              </div>
+              <div class="field">
+                <input type="text" placeholder="Twitter Username">
+                <i class="fa-brands fa-twitter"></i>
+              </div>
+              <div class="field">
+                <input type="text" placeholder="Twitter Username">
+                <i class="fa-brands fa-twitter"></i>
+              </div>
+            </form>
+          </div>
+
+
+
+          <div class="widgets-control-box">
+            <h3>Widgets Control</h3>
+            <p>Show/Hide Widgets</p>
+            <form action="">
+
+              <label>
+                <input type="checkbox">
+                Quick Draft
+              </label>
+              <label>
+                <input type="checkbox">
+                Quick Draft
+              </label>
+              <label>
+                <input type="checkbox">
+                Quick Draft
+              </label>
+              <label>
+                <input type="checkbox">
+                Quick Draft
+              </label>
+              <label>
+                <input type="checkbox">
+                Quick Draft
+              </label>
+            </form>
+          </div>
+
+
+
+
+          <div class="backup-manager-box">
+            <h3>Backup Manager</h3>
+            <p>Control Backup Time And Location</p>
+            <form>
+              <div class="time">
+                <label>
+                  <input type="radio" name="time" />
+                  Daily
+                </label>
+                <label>
+                  <input type="radio" name="time" />
+                  Weekly
+                </label>
+                <label>
+                  <input type="radio" name="time" />
+                  Monthly
+                </label>
+              </div>
+              <div class="place">
+                <label>
+                  <input type="radio" name="place">
+                  <div class="detail">
+                    <i class="fa-solid fa-hard-drive"></i>
+                    <span>Narmer</span>
+                  </div>
+                </label>
+                <label>
+                  <input type="radio" name="place">
+                  <div class="detail">
+                    <i class="fa-solid fa-hard-drive"></i>
+                    <span>Narmer</span>
+                  </div>
+                </label>
+                <label>
+                  <input type="radio" name="place">
+                  <div class="detail">
+                    <i class="fa-solid fa-hard-drive"></i>
+                    <span>Narmer</span>
+                  </div>
+                </label>
+              </div>
+            </form>
+          </div>
+
+
+
+        </div>
+
+
+
+
+      </div>
+    </section>
+  </div>
+</body>
+
+</html>

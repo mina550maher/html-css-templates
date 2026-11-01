@@ -1,0 +1,106 @@
+.projects {
+  margin-top: 30px;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(420px, 1fr));
+  gap: 20px;
+}
+
+@media screen and (max-width: 992px) {
+  .projects {
+    grid-template-columns: 100%;
+    gap: 20px;
+  }
+}
+
+.projects .project {
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.projects .project .time {
+  text-align: right;
+  font-size: 14px;
+  color: #777;
+}
+.projects .project h3 {
+  font-size: 16px;
+}
+.projects .project .title {
+  color: #777;
+  margin-top: 10px;
+}
+
+.projects .project .avatars {
+  margin-top: 20px;
+  padding: 20px 0;
+}
+.projects .project .avatars img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  position: relative;
+  border: 3px solid white;
+}
+
+.projects .project .avatars img:hover {
+  z-index: 1;
+}
+
+.projects .project .avatars img:not(:first-child) {
+  margin-left: -20px;
+}
+.projects .project .topics {
+  margin-top: 10px;
+  padding: 20px 0;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  gap: 10px;
+  border-top: 1px solid #ddd;
+  border-bottom: 1px solid #ddd;
+}
+
+@media screen and (max-width: 768px) {
+  .projects .project .topics {
+    flex-direction: column;
+  }
+}
+
+.projects .project .topics span {
+  background-color: #eee;
+  padding: 3px 6px;
+  border-radius: 4px;
+}
+
+.projects .project .box {
+  /* background-color: red; */
+  margin-top: 10px;
+  padding: 10px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+}
+@media screen and (max-width: 768px) {
+  .projects .project .box {
+    flex-direction: column;
+  }
+}
+.projects .project .box .progress {
+  width: 240px;
+  height: 10px;
+  border-radius: 10px;
+  background-color: #eee;
+  overflow: hidden;
+}
+.projects .project .box .progress .fill {
+  display: block;
+  height: 100%;
+  background-color: blue;
+}
+
+.projects .project .box > span > i {
+  font-size: 16px;
+  color: #777;
+}
